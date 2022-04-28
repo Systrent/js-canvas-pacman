@@ -1,0 +1,33 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+figure img{
+	width: 260px;
+}
+
+canvas {
+	border: 10px solid;
+	border-image: 
+	linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+	animation: rotate 2.5s ease-in infinite;
+}
+
+@keyframes rotate{
+	50%{
+		border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+	}
+}
